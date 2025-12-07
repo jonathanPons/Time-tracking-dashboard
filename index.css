@@ -38,9 +38,16 @@ body {
   background-color: #0c1322;
 }
 .grid-container {
-  margin: 90px 25px 90px 25px;
   display: grid;
-  grid-template-columns: 1fr;
+
+  grid-template-areas:
+    "box-1 "
+    "box-2"
+    "box-3 "
+    "box-4"
+    "box-5 "
+    "box-6"
+    "box-7";
   align-items: center;
   border: 1px solid blue;
   gap: 15px;
@@ -48,7 +55,6 @@ body {
   margin: 50px;
   border-radius: 10px;
   gap: 25px;
-  grid-template-areas: none;
 }
 
 /* ITEM 1*/
