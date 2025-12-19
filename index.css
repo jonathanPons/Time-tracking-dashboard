@@ -110,10 +110,30 @@ body {
   width: 100%;
   border-radius: 10px;
 }
+.main-hour {
+  font-weight: lighter;
+  color: whitesmoke;
+  font-size: 30px;
+}
 
 .time p:hover {
   cursor: pointer;
   color: white;
+}
+
+.white {
+  color: white;
+}
+
+.whiteWeek {
+  color: white;
+}
+.monthwhite {
+  color: white;
+}
+
+.previous-hour {
+  color: var(--Purple500);
 }
 /* ITEM2*/
 .item-2 {
@@ -175,11 +195,10 @@ h2 {
 
 .second-part {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
-  height: 100%;
-  justify-content: start;
-  align-items: start;
+  justify-content: space-between;
+  align-items: center;
   background-color: #1e204d;
   padding: 15px 10px 0px 10px;
   border-radius: 10px;
@@ -602,5 +621,22 @@ h2 {
     height: 100%;
     height: 88%;
     position: absolute;
+  }
+  .second-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+
+    background-color: #1e204d;
+    padding: 15px 10px 0px 10px;
+    border-radius: 10px;
+  }
+  .main-hour {
+    font-weight: lighter;
+    color: whitesmoke;
+    font-size: 40px;
   }
 }

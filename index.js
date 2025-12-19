@@ -56,6 +56,19 @@ function changeData(periode) {
 
     lastHour.textContent = ` ${previousText} - ${previousHour} hrs`;
   });
+  if (periode === "daily") {
+    daily.classList.add("white");
+    Weekly.classList.remove("whiteWeek");
+    Monthly.classList.remove("monthwhite");
+  } else if (periode === "weekly") {
+    Weekly.classList.add("whiteWeek");
+    daily.classList.remove("white");
+    Monthly.classList.remove("monthwhite");
+  } else if (periode === "monthly") {
+    Monthly.classList.add("monthwhite");
+    daily.classList.remove("white");
+    Weekly.classList.remove("whiteWeek");
+  }
 }
 
 daily.addEventListener("click", () => {
